@@ -1,0 +1,19 @@
+﻿<Window x:Class="CGT_TIMER.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Height="196" Width="360" Background="Lime" Foreground="{x:Null}" MinWidth="360" MinHeight="196" MaxWidth="360" MaxHeight="196" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" WindowStyle="None" BorderBrush="{x:Null}" AllowsTransparency="True" MouseLeftButtonDown="Window_MouseLeftButtonDown" MouseRightButtonDown="Window_MouseRightButtonDown">
+    <Window.InputBindings>
+        <KeyBinding Key="Space" Command="{Binding ToggleStartPauseCommand}"/>
+        <KeyBinding Key="Delete" Command="{Binding ResetCommand}"/>
+        <KeyBinding Modifiers="Control" Key="Space" Command="{Binding SetTTBCommand}"/>
+        <KeyBinding Modifiers="Control" Key="Delete" Command="{Binding ClearTTBCommand}"/>
+        <KeyBinding Key="Esc" Command="{Binding CloseWindowCommand}"/>
+    </Window.InputBindings>
+    <Grid Height="196">
+        <Label x:Name="TimeToBeatText" Content="0:00.0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="0,98,0,0" BorderBrush="#00000000" Foreground="White" FontFamily="Consolas" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0,0,0,0" FontWeight="Bold" Height="98" IsEnabled="False"/>
+        <Label x:Name="CurrentTimeText" Content="-0:10.0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="0,0,0,98" BorderBrush="#00000000" Foreground="White" FontFamily="Consolas" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0,0,0,0" FontWeight="Bold" Height="98" IsEnabled="False"/>
+    </Grid>
+</Window>

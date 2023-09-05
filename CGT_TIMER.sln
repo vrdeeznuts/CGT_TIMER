@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CGT_TIMER", "CG_TIMER\CGT_TIMER.csproj", "{42480E61-7A41-41C3-A210-C41C286D608C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42480E61-7A41-41C3-A210-C41C286D608C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42480E61-7A41-41C3-A210-C41C286D608C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42480E61-7A41-41C3-A210-C41C286D608C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42480E61-7A41-41C3-A210-C41C286D608C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F6AD8FA-5326-4608-B0DB-79A2F67913D7}
+	EndGlobalSection
+EndGlobal
