@@ -22,8 +22,8 @@ In OBS, change the Window Capture source to this application and use the same fi
 Currently, there are only 2 functions implemented. 
 1. Move the application around by dragging the window wherever you want on screen.
 2. Right clicking on the window will open the context menu. There is a settings button and Always On Top button.
-  i. Settings doesn't do anything except open a new window. I will add stuff to this in the future.
-  ii. Always On Top will toggle making the application stay on top. This is useful for when you're casting a scrim/match and you don't want to keep switching between windows.
+   i. Settings doesn't do anything except open a new window. I will add stuff to this in the future.
+   ii. Always On Top will toggle making the application stay on top. This is useful for when you're casting a scrim/match and you don't want to keep switching between windows.
 
 # TODO
 I plan to add a bit more functionality/customization to this app. This includes:
