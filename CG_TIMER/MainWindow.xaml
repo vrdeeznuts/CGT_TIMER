@@ -12,6 +12,12 @@
         <KeyBinding Modifiers="Control" Key="Delete" Command="{Binding ClearTTBCommand}"/>
         <KeyBinding Key="Esc" Command="{Binding CloseWindowCommand}"/>
     </Window.InputBindings>
+    <Window.ContextMenu>
+        <ContextMenu>
+            <MenuItem x:Name="MenuSettings" Header="Settings" Click="MenuItem_Settings_Click"/>
+            <MenuItem x:Name="MenuAOT" Header="Always on Top" Click="MenuItem_ToggleAlwaysOnTop_Click" IsCheckable="True"/>
+        </ContextMenu>
+    </Window.ContextMenu>
     <Grid Height="196">
         <Label x:Name="TimeToBeatText" Content="0:00.0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="0,98,0,0" BorderBrush="#00000000" Foreground="White" FontFamily="Consolas" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0,0,0,0" FontWeight="Bold" Height="98" IsEnabled="False"/>
         <Label x:Name="CurrentTimeText" Content="-0:10.0" ScrollViewer.VerticalScrollBarVisibility="Disabled" Margin="0,0,0,98" BorderBrush="#00000000" Foreground="White" FontFamily="Consolas" FontSize="72" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="0,0,0,0" FontWeight="Bold" Height="98" IsEnabled="False"/>

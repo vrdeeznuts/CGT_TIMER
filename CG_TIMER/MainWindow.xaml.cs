@@ -66,8 +66,31 @@ namespace CGT_TIMER
 
         private void Window_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
+            if (ContextMenu != null)
+            {
+                if (Topmost)
+                {
+                    MenuAOT.IsChecked = true;
+                }
+                else
+                {
+                    MenuAOT.IsChecked = false;
+                }
+                ContextMenu.IsOpen = true;
+            }
+
+        }
+
+        private void MenuItem_Settings_Click(object sender, RoutedEventArgs e)
+        {
             SettingsWindow settingsWindow = new();
             settingsWindow.ShowDialog();
+        }
+
+        private void MenuItem_ToggleAlwaysOnTop_Click(object sender, RoutedEventArgs e)
+        {
+            // Toggle 'always on top'
+            Topmost = !Topmost;
         }
 
         private void ToggleStartPause()
